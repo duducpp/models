@@ -2569,40 +2569,6 @@
       }
     },
     {
-      "id": "gpt-daybreak-blue-latest",
-      "object": "model",
-      "created": 1783616400,
-      "owned_by": "openai",
-      "type": "openai",
-      "display_name": "Daybreak Blue",
-      "version": "gpt-5.6",
-      "description": "Latest frontier agentic coding model for broad defensive cybersecurity work.",
-      "context_length": 921000,
-      "max_completion_tokens": 128000,
-      "supported_parameters": [
-        "tools"
-      ],
-      "thinking": {
-        "levels": [
-          "low",
-          "medium",
-          "high",
-          "xhigh",
-          "max"
-        ]
-      },
-      "supportedInputModalities": [
-        "text",
-        "image"
-      ],
-      "supportedOutputModalities": [
-        "text"
-      ],
-      "native_capabilities": {
-        "web_search": true
-      }
-    },
-    {
       "id": "gpt-5.6-terra",
       "object": "model",
       "created": 1783616400,
@@ -2664,6 +2630,40 @@
           "user-agent": "codex-tui/0.154.0 (Mac OS 26.5.2; arm64) iTerm.app/3.6.11 (codex-tui; 0.154.0)",
           "originator": "codex-tui"
         }
+      },
+      "supportedInputModalities": [
+        "text",
+        "image"
+      ],
+      "supportedOutputModalities": [
+        "text"
+      ],
+      "native_capabilities": {
+        "web_search": true
+      }
+    },
+    {
+      "id": "gpt-daybreak-blue-latest",
+      "object": "model",
+      "created": 1783616400,
+      "owned_by": "openai",
+      "type": "openai",
+      "display_name": "Daybreak Blue",
+      "version": "gpt-5.6",
+      "description": "Latest frontier agentic coding model for broad defensive cybersecurity work.",
+      "context_length": 272000,
+      "max_completion_tokens": 128000,
+      "supported_parameters": [
+        "tools"
+      ],
+      "thinking": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
       },
       "supportedInputModalities": [
         "text",
@@ -2821,7 +2821,7 @@
       "display_name": "Daybreak Blue",
       "version": "gpt-5.6",
       "description": "Latest frontier agentic coding model for broad defensive cybersecurity work.",
-      "context_length": 921000,
+      "context_length": 272000,
       "max_completion_tokens": 128000,
       "supported_parameters": [
         "tools"
@@ -3065,7 +3065,7 @@
       "display_name": "Daybreak Blue",
       "version": "gpt-5.6",
       "description": "Latest frontier agentic coding model for broad defensive cybersecurity work.",
-      "context_length": 921000,
+      "context_length": 272000,
       "max_completion_tokens": 128000,
       "supported_parameters": [
         "tools"
@@ -3309,7 +3309,7 @@
       "display_name": "Daybreak Blue",
       "version": "gpt-5.6",
       "description": "Latest frontier agentic coding model for broad defensive cybersecurity work.",
-      "context_length": 921000,
+      "context_length": 272000,
       "max_completion_tokens": 128000,
       "supported_parameters": [
         "tools"
