@@ -194,35 +194,6 @@
       ]
     },
     {
-      "id": "claude-opus-5-5",
-      "object": "model",
-      "created": 1790035200,
-      "owned_by": "anthropic",
-      "type": "claude",
-      "display_name": "Claude Opus 5.5",
-      "description": "Anthropic's leading model for agentic coding and knowledge work, priced below Claude Opus 5 with cache reads at a fifth of the prior cost. Supports adaptive thinking and does not accept disabled thinking.",
-      "context_length": 1000000,
-      "max_completion_tokens": 128000,
-      "thinking": {
-        "zero_allowed": false,
-        "dynamic_allowed": true,
-        "levels": [
-          "low",
-          "medium",
-          "high",
-          "xhigh",
-          "max"
-        ]
-      },
-      "supportedInputModalities": [
-        "text",
-        "image"
-      ],
-      "supportedOutputModalities": [
-        "text"
-      ]
-    },
-    {
       "id": "claude-sonnet-5",
       "object": "model",
       "created": 1782777600,
@@ -295,6 +266,64 @@
         "min": 1024,
         "max": 128000,
         "zero_allowed": true,
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "supportedInputModalities": [
+        "text",
+        "image"
+      ],
+      "supportedOutputModalities": [
+        "text"
+      ]
+    },
+    {
+      "id": "claude-opus-5-5",
+      "object": "model",
+      "created": 1790035200,
+      "owned_by": "anthropic",
+      "type": "claude",
+      "display_name": "Claude Opus 5.5",
+      "description": "Latest premium model combining maximum intelligence with practical performance",
+      "context_length": 1000000,
+      "max_completion_tokens": 128000,
+      "thinking": {
+        "zero_allowed": true,
+        "dynamic_allowed": true,
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "supportedInputModalities": [
+        "text",
+        "image"
+      ],
+      "supportedOutputModalities": [
+        "text"
+      ]
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "object": "model",
+      "created": 1790553600,
+      "owned_by": "anthropic",
+      "type": "claude",
+      "display_name": "Claude Sonnet 5.5",
+      "description": "Anthropic's agentic Sonnet model for coding, tool use, and enterprise workflows",
+      "context_length": 1000000,
+      "max_completion_tokens": 128000,
+      "thinking": {
+        "zero_allowed": true,
+        "dynamic_allowed": true,
         "levels": [
           "low",
           "medium",
@@ -2565,6 +2594,41 @@
   ],
   "codex-free": [
     {
+      "id": "gpt-6-luna",
+      "object": "model",
+      "created": 1790035200,
+      "owned_by": "openai",
+      "type": "openai",
+      "display_name": "GPT 6.0 Luna",
+      "version": "gpt-6.0",
+      "description": "GPT-6 Luna Codex model.",
+      "context_length": 272000,
+      "max_completion_tokens": 128000,
+      "supported_parameters": [
+        "tools"
+      ],
+      "thinking": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "supportedInputModalities": [
+        "text",
+        "image"
+      ],
+      "supportedOutputModalities": [
+        "text"
+      ],
+      "native_capabilities": {
+        "web_search": true
+      },
+      "support_configuration_update": true
+    },
+    {
       "id": "gpt-5.5",
       "object": "model",
       "created": 1776902400,
@@ -2584,74 +2648,6 @@
           "medium",
           "high",
           "xhigh"
-        ]
-      },
-      "supportedInputModalities": [
-        "text",
-        "image"
-      ],
-      "supportedOutputModalities": [
-        "text"
-      ],
-      "native_capabilities": {
-        "web_search": true
-      }
-    },
-    {
-      "id": "gpt-6-sol",
-      "object": "model",
-      "created": 1790035200,
-      "owned_by": "openai",
-      "type": "openai",
-      "display_name": "GPT 6.0 Sol",
-      "version": "gpt-6.0",
-      "description": "Workhorse model for coding and everyday work.",
-      "context_length": 272000,
-      "max_completion_tokens": 128000,
-      "supported_parameters": [
-        "tools"
-      ],
-      "thinking": {
-        "levels": [
-          "low",
-          "medium",
-          "high",
-          "xhigh",
-          "max"
-        ]
-      },
-      "supportedInputModalities": [
-        "text",
-        "image"
-      ],
-      "supportedOutputModalities": [
-        "text"
-      ],
-      "native_capabilities": {
-        "web_search": true
-      }
-    },
-    {
-      "id": "gpt-6-luna",
-      "object": "model",
-      "created": 1790035200,
-      "owned_by": "openai",
-      "type": "openai",
-      "display_name": "GPT 6.0 Luna",
-      "version": "gpt-6.0",
-      "description": "Fast and affordable model for easier tasks.",
-      "context_length": 272000,
-      "max_completion_tokens": 128000,
-      "supported_parameters": [
-        "tools"
-      ],
-      "thinking": {
-        "levels": [
-          "low",
-          "medium",
-          "high",
-          "xhigh",
-          "max"
         ]
       },
       "supportedInputModalities": [
@@ -2907,7 +2903,8 @@
       ],
       "native_capabilities": {
         "web_search": true
-      }
+      },
+      "support_configuration_update": true
     },
     {
       "id": "gpt-6-sol",
@@ -2917,7 +2914,7 @@
       "type": "openai",
       "display_name": "GPT 6.0 Sol",
       "version": "gpt-6.0",
-      "description": "Workhorse model for coding and everyday work.",
+      "description": "GPT-6 Sol Codex model.",
       "context_length": 272000,
       "max_completion_tokens": 128000,
       "supported_parameters": [
@@ -2941,7 +2938,43 @@
       ],
       "native_capabilities": {
         "web_search": true
-      }
+      },
+      "support_configuration_update": true
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "object": "model",
+      "created": 1790640000,
+      "owned_by": "openai",
+      "type": "openai",
+      "display_name": "GPT 6.1 Sol",
+      "version": "gpt-6.0",
+      "description": "Latest workhorse model for coding and everyday work.",
+      "context_length": 272000,
+      "max_completion_tokens": 128000,
+      "supported_parameters": [
+        "tools"
+      ],
+      "thinking": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "supportedInputModalities": [
+        "text",
+        "image"
+      ],
+      "supportedOutputModalities": [
+        "text"
+      ],
+      "native_capabilities": {
+        "web_search": true
+      },
+      "support_configuration_update": true
     },
     {
       "id": "gpt-6-luna",
@@ -2951,7 +2984,7 @@
       "type": "openai",
       "display_name": "GPT 6.0 Luna",
       "version": "gpt-6.0",
-      "description": "Fast and affordable model for easier tasks.",
+      "description": "GPT-6 Luna Codex model.",
       "context_length": 272000,
       "max_completion_tokens": 128000,
       "supported_parameters": [
@@ -2975,7 +3008,8 @@
       ],
       "native_capabilities": {
         "web_search": true
-      }
+      },
+      "support_configuration_update": true
     },
     {
       "id": "gpt-5.6-sol",
@@ -3253,7 +3287,8 @@
       ],
       "native_capabilities": {
         "web_search": true
-      }
+      },
+      "support_configuration_update": true
     },
     {
       "id": "gpt-6-sol",
@@ -3263,7 +3298,7 @@
       "type": "openai",
       "display_name": "GPT 6.0 Sol",
       "version": "gpt-6.0",
-      "description": "Workhorse model for coding and everyday work.",
+      "description": "GPT-6 Sol Codex model.",
       "context_length": 272000,
       "max_completion_tokens": 128000,
       "supported_parameters": [
@@ -3287,7 +3322,43 @@
       ],
       "native_capabilities": {
         "web_search": true
-      }
+      },
+      "support_configuration_update": true
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "object": "model",
+      "created": 1790640000,
+      "owned_by": "openai",
+      "type": "openai",
+      "display_name": "GPT 6.1 Sol",
+      "version": "gpt-6.0",
+      "description": "Latest workhorse model for coding and everyday work.",
+      "context_length": 272000,
+      "max_completion_tokens": 128000,
+      "supported_parameters": [
+        "tools"
+      ],
+      "thinking": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "supportedInputModalities": [
+        "text",
+        "image"
+      ],
+      "supportedOutputModalities": [
+        "text"
+      ],
+      "native_capabilities": {
+        "web_search": true
+      },
+      "support_configuration_update": true
     },
     {
       "id": "gpt-6-luna",
@@ -3297,7 +3368,7 @@
       "type": "openai",
       "display_name": "GPT 6.0 Luna",
       "version": "gpt-6.0",
-      "description": "Fast and affordable model for easier tasks.",
+      "description": "GPT-6 Luna Codex model.",
       "context_length": 272000,
       "max_completion_tokens": 128000,
       "supported_parameters": [
@@ -3321,7 +3392,8 @@
       ],
       "native_capabilities": {
         "web_search": true
-      }
+      },
+      "support_configuration_update": true
     },
     {
       "id": "gpt-5.6-sol",
@@ -3599,7 +3671,8 @@
       ],
       "native_capabilities": {
         "web_search": true
-      }
+      },
+      "support_configuration_update": true
     },
     {
       "id": "gpt-6-sol",
@@ -3609,7 +3682,7 @@
       "type": "openai",
       "display_name": "GPT 6.0 Sol",
       "version": "gpt-6.0",
-      "description": "Workhorse model for coding and everyday work.",
+      "description": "GPT-6 Sol Codex model.",
       "context_length": 272000,
       "max_completion_tokens": 128000,
       "supported_parameters": [
@@ -3633,7 +3706,43 @@
       ],
       "native_capabilities": {
         "web_search": true
-      }
+      },
+      "support_configuration_update": true
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "object": "model",
+      "created": 1790640000,
+      "owned_by": "openai",
+      "type": "openai",
+      "display_name": "GPT 6.1 Sol",
+      "version": "gpt-6.0",
+      "description": "Latest workhorse model for coding and everyday work.",
+      "context_length": 272000,
+      "max_completion_tokens": 128000,
+      "supported_parameters": [
+        "tools"
+      ],
+      "thinking": {
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "supportedInputModalities": [
+        "text",
+        "image"
+      ],
+      "supportedOutputModalities": [
+        "text"
+      ],
+      "native_capabilities": {
+        "web_search": true
+      },
+      "support_configuration_update": true
     },
     {
       "id": "gpt-6-luna",
@@ -3643,7 +3752,7 @@
       "type": "openai",
       "display_name": "GPT 6.0 Luna",
       "version": "gpt-6.0",
-      "description": "Fast and affordable model for easier tasks.",
+      "description": "GPT-6 Luna Codex model.",
       "context_length": 272000,
       "max_completion_tokens": 128000,
       "supported_parameters": [
@@ -3667,7 +3776,8 @@
       ],
       "native_capabilities": {
         "web_search": true
-      }
+      },
+      "support_configuration_update": true
     },
     {
       "id": "gpt-5.6-sol",
@@ -4511,12 +4621,40 @@
         "web_search": true
       },
       "object": "model",
-      "created": 1790000000,
+      "created": 1789948800,
       "owned_by": "xai",
       "type": "xai",
       "display_name": "Grok 4.7",
       "name": "grok-4.7",
       "description": "SpaceXAI's frontier model for coding, agentic tasks, and knowledge work.",
+      "context_length": 500000,
+      "max_completion_tokens": 500000,
+      "thinking": {
+        "zero_allowed": false,
+        "levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ]
+      },
+      "supportedInputModalities": [
+        "text",
+        "image"
+      ],
+      "supportedOutputModalities": [
+        "text"
+      ]
+    },
+    {
+      "id": "grok-4.7-build-fast",
+      "object": "model",
+      "created": 1789948800,
+      "owned_by": "xai",
+      "type": "xai",
+      "display_name": "Grok 4.7 Fast",
+      "name": "grok-4.7-build-fast",
+      "description": "Grok 4.7 Fast as served by the Grok Build chat-proxy. Same model as grok-4.7 on the faster tier.",
       "context_length": 500000,
       "max_completion_tokens": 500000,
       "thinking": {
