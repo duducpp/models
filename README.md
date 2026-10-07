@@ -53,11 +53,15 @@ The exact assertions and provenance are recorded in
 | Catalog section | Exact model ID | Declaration | Evidence |
 | --- | --- | --- | --- |
 | `claude` | `claude-opus-5` | `true` | Anthropic's [Web search tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool) documentation includes native search requests with this exact model, including `web_search_20250305`. |
+| `claude` | `claude-opus-5-5` | `true` | Maintainer declaration for Anthropic-native Claude; Antigravity-hosted Claude remains unsupported. |
+| `claude` | `claude-sonnet-5-5` | `true` | Maintainer declaration for Anthropic-native Claude; Antigravity-hosted Claude remains unsupported. |
 | `xai` | `grok-4.6` | `true` | The [Grok 4.6 model page](https://docs.x.ai/developers/grok-4-6.md) lists web search; the [official Responses examples](https://docs.x.ai/developers/tools/advanced-usage.md) use this exact ID with `web_search`. |
+| `xai` | `grok-4.7` | `true` | The [Grok 4.7 model page](https://docs.x.ai/developers/models/grok-4.7) lists web search; a live Responses probe verified `web_search`. |
+| `xai` | `grok-4.7-build-fast` | `true` | Live Responses probe through a local CPA xAI route returned `web_search_call` items and `url_citation` annotations. |
 
 These documentation excerpts were retrieved through Context7's indexes of the
-first-party sites (`/websites/platform_claude_en` and `/websites/x_ai`). They are
-not live upstream test results. Direct HTTP retrieval can redirect to unrelated
+first-party sites (`/websites/platform_claude_en` and `/websites/x_ai`). Unless
+the evidence entry records a live invocation, they are not live upstream test results. Direct HTTP retrieval can redirect to unrelated
 landing pages; such pages were not used as proof of model support.
 
 Other Claude, xAI, and Kimi IDs remain unknown: these exact examples are not
@@ -67,7 +71,7 @@ a false capability claim.
 ### Gemini maintainer declaration
 
 [`gemini-native-search-declaration.json`](./gemini-native-search-declaration.json)
-records the maintainer's explicit decision to mark all 61 existing Gemini
+records the maintainer's explicit decision to mark all 62 existing Gemini
 entries as `native_capabilities.web_search: true`, including image models and
 aliases:
 
@@ -77,7 +81,7 @@ aliases:
 | `vertex` | 16 |
 | `gemini-cli` | 7 |
 | `aistudio` | 16 |
-| `antigravity` | 8 |
+| `antigravity` | 9 |
 
 The declaration enumerates exact provider/model pairs. It is **not** official
 model-by-model documentation or a live upstream test result, and it does not
