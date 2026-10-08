@@ -17,6 +17,7 @@ Everything else follows upstream, including fields, IDs, section membership, and
 | --- | --- | --- |
 | `gpt-daybreak-blue-latest`, `gpt-daybreak-red-latest` | `models.json`: all four `codex-*` sections. `codex_client_models.json`: after `gpt-5.6-luna` | Fork addition from the official Codex catalog (`openai/codex`, `codex-rs/models-manager/models.json`) |
 | Codex `web_search` table | `README.md`, `codex-*` rows | Each row lists that section's `web_search: true` IDs in catalog order; upstream's table lags its own data |
+| `claude-haiku-5-5`: no `native_capabilities` | `models.json`: `claude` section | Upstream sets `web_search: true` without evidence in `native-capabilities-evidence.json`; `validate-native-capabilities.mjs` rejects it |
 
 ## Catalog files
 
